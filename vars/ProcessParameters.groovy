@@ -42,6 +42,8 @@ public def HashMap call (boolean pShowSaveParameters, boolean pDefaultSaveParame
                                                        // which means automatic invocation
         print "invoked automatic"
         UserParameters = ReadParametersFromFile().startval //Updating the UserParameters from the file, since it was invoked automatically.
+        SaveParametersToJob(ShowSaveParameters,DefaultSaveParametersValue)
+
     }
     return UserParameters
 }
